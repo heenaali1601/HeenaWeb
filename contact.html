@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Heena Wellness Coach. Book a free consultation, send a message, or chat on WhatsApp.">
+    <title>Contact | Heena Wellness Coach</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <i class="fas fa-spa"></i>
+                    <span>Heena Wellness</span>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link">Programs</a></li>
+                <li><a href="transformations.html" class="nav-link">Transformations</a></li>
+                <li><a href="community.html" class="nav-link">Community</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="contact.html" class="nav-link btn-cta">Book Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="page-hero" style="background: linear-gradient(rgba(108, 192, 147, 0.8), rgba(135, 206, 235, 0.8)), url('assets/images/contact-hero.jpg') center/cover;">
+        <div class="hero-content">
+            <h1>Get In Touch</h1>
+            <p>Let's Start Your Wellness Journey</p>
+        </div>
+    </section>
+
+    <!-- CONTACT INTRO SECTION -->
+    <section class="container" style="padding: 4rem 1rem;">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+            <h2>Ready to Transform?</h2>
+            <p>I'd love to hear from you! Whether you have questions about programs, want to book a free consultation, or just need some guidance—reach out. I respond to every message.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT METHODS SECTION -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Quick chat & instant responses</p>
+                    <a href="https://wa.me/918888888888" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> Chat Now
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Send your detailed message</p>
+                    <a href="mailto:hello@heenawellness.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>Call for a quick consultation</p>
+                    <a href="tel:+918888888888" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Book Consultation</h3>
+                    <p>Schedule your free consultation</p>
+                    <button class="btn btn-primary" onclick="document.querySelector('.consultation-form').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-calendar-check"></i> Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="contact-form-section consultation-form">
+        <div class="container">
+            <h2>Book Your Free Consultation</h2>
+            <p class="section-subtitle">Fill out the form below and I'll get back to you within 24 hours</p>
+            
+            <div class="form-container">
+                <form id="consultationForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age *</label>
+                            <input type="number" id="age" name="age" required placeholder="Enter your age">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="program">Which program interests you? *</label>
+                            <select id="program" name="program" required>
+                                <option value="">Select a program</option>
+                                <option value="weight-loss">Weight Loss Coaching</option>
+                                <option value="diet-plans">Personalized Diet Plans</option>
+                                <option value="hormonal-balance">Hormonal & Metabolism Balance</option>
+                                <option value="post-pregnancy">Post-Pregnancy Weight Recovery</option>
+                                <option value="lifestyle">Lifestyle & Habit Coaching</option>
+                                <option value="group-program">Group Transformation Program</option>
+                                <option value="not-sure">Not sure yet</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="health-goal">What's your main health goal? *</label>
+                            <textarea id="health-goal" name="health-goal" required placeholder="Tell me about your wellness goals and challenges..." rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="message">Any additional information? (Optional)</label>
+                            <textarea id="message" name="message" placeholder="Share any other details you'd like me to know..." rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="consultation-time">Preferred consultation time:</label>
+                            <select id="consultation-time" name="consultation-time">
+                                <option value="">Select your preferred time</option>
+                                <option value="morning">Morning (9 AM - 12 PM)</option>
+                                <option value="afternoon">Afternoon (12 PM - 5 PM)</option>
+                                <option value="evening">Evening (5 PM - 8 PM)</option>
+                                <option value="flexible">I'm flexible</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">I agree to receive updates and wellness tips from Heena Wellness Coach</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;">
+                        Book My Free Consultation
+                    </button>
+                </form>
+
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK RESPONSE SECTION -->
+    <section class="quick-response-section">
+        <div class="container">
+            <h2>⏱️ Quick Response</h2>
+            <div class="response-grid">
+                <div class="response-item">
+                    <h3>WhatsApp</h3>
+                    <p><strong>Response time:</strong> Typically within 1-2 hours during business hours</p>
+                </div>
+                <div class="response-item">
+                    <h3>Email</h3>
+                    <p><strong>Response time:</strong> Within 24 hours</p>
+                </div>
+                <div class="response-item">
+                    <h3>Consultation Form</h3>
+                    <p><strong>Response time:</strong> Within 24 hours via phone or email</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Questions Before You Contact?</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Is the consultation really free?</h3>
+                    <p>Yes! Your 30-minute consultation is completely free. No credit card needed, no hidden fees. It's my way of getting to know you and seeing if we're a good fit.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What happens during the consultation?</h3>
+                    <p>We'll discuss your health goals, current challenges, what you've tried before, and what you're looking for. Based on our conversation, I'll recommend the best program and answer all your questions.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I'm not ready to commit yet?</h3>
+                    <p>That's okay! The consultation is a chance to ask questions and explore options with no pressure. I want you to feel 100% confident before starting.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I book a consultation if I'm outside India?</h3>
+                    <p>Yes! I work with clients worldwide. We can do consultations via video call at a time that works for you.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I have medical conditions?</h3>
+                    <p>I work with people with various health conditions. During consultation, we'll discuss your medical history, and I can coordinate with your doctor if needed for certain conditions.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I pay for programs?</h3>
+                    <p>Payment details are discussed during consultation. I offer flexible payment options to make programs accessible to everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL MEDIA SECTION -->
+    <section class="social-contact-section">
+        <div class="container">
+            <h2>Connect on Social Media</h2>
+            <p class="section-subtitle">Follow for daily wellness tips, recipes, and community support</p>
+            <div class="social-links-large">
+                <a href="https://instagram.com" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Follow on Instagram</span>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                    <span>Follow on Facebook</span>
+                </a>
+                <a href="https://wa.me/918888888888" target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Join WhatsApp Updates</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- URGENCY SECTION -->
+    <section class="urgency-section">
+        <div class="container">
+            <h2>⏰ Limited Consultation Slots Available</h2>
+            <p>Transformation starts with a conversation. Book your free consultation today—consultation slots for this month are filling up fast!</p>
+            <div style="margin-top: 2rem;">
+                <a href="#" onclick="document.querySelector('.consultation-form').scrollIntoView({behavior: 'smooth'}); return false;" class="btn btn-primary btn-lg">
+                    Book Your Slot Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Heena Wellness Coach</h4>
+                    <p>Transform Your Health, Confidence & Lifestyle Naturally</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/918888888888" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#weight-loss">Weight Loss Coaching</a></li>
+                        <li><a href="programs.html#diet-plans">Personalized Diets</a></li>
+                        <li><a href="programs.html#hormonal-balance">Hormonal Balance</a></li>
+                        <li><a href="programs.html#group-program">Group Programs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: hello@heenawellness.com</p>
+                    <p>Phone: +91 88888 88888</p>
+                    <p>WhatsApp: +91 88888 88888</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Heena Wellness Coach. All rights reserved.</p>
+                <p>Disclaimer: Information provided is for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918888888888" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Form submission handler
+        document.getElementById('consultationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                age: document.getElementById('age').value,
+                program: document.getElementById('program').value,
+                healthGoal: document.getElementById('health-goal').value,
+                message: document.getElementById('message').value,
+                consultationTime: document.getElementById('consultation-time').value
+            };
+            
+            // Log form data (in a real scenario, this would be sent to a server)
+            console.log('Form submitted:', formData);
+            
+            // Show success message
+            const messageDiv = document.getElementById('formMessage');
+            messageDiv.innerHTML = '<div class="success-message">✓ Thank you! Your consultation request has been received. I\'ll contact you within 24 hours to confirm your appointment.</div>';
+            messageDiv.style.display = 'block';
+            
+            // Reset form
+            this.reset();
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
